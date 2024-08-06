@@ -1,0 +1,26 @@
+{
+    "cookiecutter": {
+        "codeowner_github_usernames": "@michalis1",
+        "full_name": "Michael Milaitis",
+        "email": "milaitis@gmail.com",
+        "github_org": "nautobot",
+        "app_name": "nautobot_ip_acls",
+        "verbose_name": "Nautobot Ip Acls",
+        "app_slug": "nautobot-ip-acls",
+        "project_slug": "nautobot-app-ip-acls",
+        "repo_url": "https://github.com/nautobot/nautobot-app-ip-acls",
+        "base_url": "ip-acls",
+        "min_nautobot_version": "2.0.1",
+        "max_nautobot_version": "2.9999",
+        "camel_name": "NautobotIPACLs",
+        "project_short_description": "Nautobot Ip Acls",
+        "model_class_name": "None",
+        "open_source_license": "Apache-2.0",
+        "docs_base_url": "https://docs.nautobot.com",
+        "docs_app_url": "https://docs.nautobot.com/projects/nautobot-ip-acls/en/latest",
+        "_template": "https://github.com/nautobot/cookiecutter-nautobot-app.git",
+        "_output_dir": "/home/mmilaitis/devbox-wsl",
+        "_repo_dir": "/home/mmilaitis/.cookiecutters/cookiecutter-nautobot-app/nautobot-app",
+        "_checkout": null
+    }
+}
