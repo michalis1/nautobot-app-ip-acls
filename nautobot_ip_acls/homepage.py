@@ -1,3 +1,5 @@
+"""Module to change nautobot homepage."""
+
 from nautobot.apps.ui import HomePageItem, HomePagePanel
 from nautobot.extras.models import Status
 
