@@ -1,0 +1,33 @@
+{
+    "access_lists": {
+        "1": [
+            {
+                "action": "permit",
+                "network": "10.0.0.0/8",
+                "seq": 10
+            },
+            {
+                "action": "deny",
+                "network": "any",
+                "seq": 20
+            }
+        ],
+        "2": [
+            {
+                "action": "deny",
+                "network": "10.1.1.1/32",
+                "seq": 10
+            },
+            {
+                "action": "permit",
+                "network": "10.1.0.0/16",
+                "seq": 20
+            },
+            {
+                "action": "deny",
+                "network": "any",
+                "seq": 30
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{% extends 'dcim/device.html' %}
+{% block content %}
+{% for acl_id, acl_entries in config_context.access_lists.items %}
+<h4>Access-list <code>{{ acl_id }}</code></h4>
+<div class="panel panel-default">
+    <table class="table table-hover table-headings">
+        <thead>
+            <tr>
+                <th>Seq</th>
+                <th>Action</th>
+                <th>Network</th>
+            </tr>
+        </thead>
+        {% for entry in acl_entries %}
+        <tr>
+            <td>{{ entry.seq }}</td>
+            <td>{{ entry.action }}</td>
+            <td>{{ entry.network }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endfor %}
+{% endblock content %}
