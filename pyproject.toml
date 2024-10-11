@@ -32,6 +32,8 @@ python = ">=3.8,<3.12"
 nautobot = "2.2.8"
 nautobot-ssot = "^2.0.0"
 nautobot-plugin-nornir = "^2.1.0"
+nautobot-data-validation-engine = "^3.1.1"
+nautobot-device-onboarding = "^4.0.1"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "*"

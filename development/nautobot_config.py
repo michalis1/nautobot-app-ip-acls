@@ -135,7 +135,9 @@ if not _TESTING:
 PLUGINS = [
     "nautobot_ip_acls",
     "nautobot_ssot",
-    "nautobot_plugin_nornir"
+    "nautobot_plugin_nornir",
+    "nautobot_data_validation_engine",
+    "nautobot_device_onboarding",
 ]
 
 # Apps configuration settings. These settings are used by various Apps that the user may have installed.
@@ -173,5 +175,11 @@ PLUGINS_CONFIG = {
             #     "num_workers": 20,
             # },
         },
+    },
+    "nautobot_device_onboarding": {
+        "default_ip_status": "Active",
+        "default_device_role": "router",
+        # "default_management_interface": "Loopback0",
+        "skip_device_type_on_update": True,
     },
 }
