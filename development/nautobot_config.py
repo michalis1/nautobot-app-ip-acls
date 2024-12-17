@@ -149,6 +149,10 @@ PLUGINS_CONFIG = {
     # },
     "nautobot_ssot": {
         "hide_example_jobs": False,
+        "enable_servicenow": True,
+        "servicenow_instance": os.getenv("SERVICENOW_INSTANCE", "http://servicenow.com"),
+        "servicenow_password": os.getenv("SERVICENOW_PASSWORD", "test"),
+        "servicenow_username": os.getenv("SERVICENOW_USERNAME", "test123"),
     },
     "nautobot_plugin_nornir": {
         "nornir_settings": {

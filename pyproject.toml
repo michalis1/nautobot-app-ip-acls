@@ -29,11 +29,11 @@ include = [
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
 # Used for local development
-nautobot = "2.2.8"
-nautobot-ssot = "^2.0.0"
-nautobot-plugin-nornir = "^2.1.0"
-nautobot-data-validation-engine = "^3.1.1"
-nautobot-device-onboarding = "^4.0.1"
+nautobot = "2.3.12"
+nautobot-ssot = {extras = ["servicenow"], version = "^3.3.0"}
+nautobot-plugin-nornir = "*"
+nautobot-data-validation-engine = "*"
+nautobot-device-onboarding = "*"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "*"
@@ -90,7 +90,8 @@ notes = """,
 [tool.pylint-nautobot]
 supported_nautobot_versions = [
     "2.0.1",
-    "2.2.8"
+    "2.2.8",
+    "2.3.12",
 ]
 
 [tool.ruff]

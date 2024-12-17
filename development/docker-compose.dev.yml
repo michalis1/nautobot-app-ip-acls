@@ -10,6 +10,7 @@ services:
       - "8080:8080"
     volumes:
       - "./nautobot_config.py:/opt/nautobot/nautobot_config.py"
+      - "../nautobot_ip_acls/jobs:/opt/nautobot/jobs"
       - "../:/source"
     healthcheck:
       interval: "30s"
@@ -34,6 +35,7 @@ services:
       - "watchmedo auto-restart --directory './' --pattern '*.py' --recursive -- nautobot-server celery worker -l $$NAUTOBOT_LOG_LEVEL --events"  ## $$ because of docker-compose
     volumes:
       - "./nautobot_config.py:/opt/nautobot/nautobot_config.py"
+      - "../nautobot_ip_acls/jobs:/opt/nautobot/jobs"
       - "../:/source"
     healthcheck:
       test: ["CMD", "true"]  # Due to layering, disable: true won't work. Instead, change the test
