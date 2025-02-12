@@ -48,7 +48,7 @@ namespace = Collection("nautobot_ip_acls")
 namespace.configure(
     {
         "nautobot_ip_acls": {
-            "nautobot_ver": "2.3.12",
+            "nautobot_ver": "2.4.0",
             "project_name": "nautobot-ip-acls",
             "python_ver": "3.11",
             "local": False,

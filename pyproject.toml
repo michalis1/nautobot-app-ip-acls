@@ -27,13 +27,15 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"
+python = ">=3.9,<3.12"
 # Used for local development
-nautobot = "2.3.12"
+nautobot = "2.4.0"
 nautobot-ssot = {extras = ["servicenow"], version = "^3.3.0"}
 nautobot-plugin-nornir = "*"
 nautobot-data-validation-engine = "*"
 nautobot-device-onboarding = "*"
+nautobot-golden-config = "*"
+nautobot-firewall-models = "*"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "*"
@@ -92,6 +94,7 @@ supported_nautobot_versions = [
     "2.0.1",
     "2.2.8",
     "2.3.12",
+    "2.4.0"
 ]
 
 [tool.ruff]

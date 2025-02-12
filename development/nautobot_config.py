@@ -138,6 +138,8 @@ PLUGINS = [
     "nautobot_plugin_nornir",
     "nautobot_data_validation_engine",
     "nautobot_device_onboarding",
+    "nautobot_golden_config",
+    "nautobot_firewall_models",
 ]
 
 # Apps configuration settings. These settings are used by various Apps that the user may have installed.
@@ -185,5 +187,27 @@ PLUGINS_CONFIG = {
         "default_device_role": "router",
         # "default_management_interface": "Loopback0",
         "skip_device_type_on_update": True,
+    },
+        "nautobot_golden_config": {
+        # "per_feature_bar_width": 0.15,
+        # "per_feature_width": 13,
+        # "per_feature_height": 4,
+        "enable_backup": True,
+        "enable_compliance": True,
+        "enable_intended": True,
+        "enable_sotagg": True,
+        "enable_plan": True,
+        "enable_deploy": True,
+        # "enable_postprocessing": False,
+        # "sot_agg_transposer": None,
+        # "postprocessing_callables": [],
+        # "postprocessing_subscribed": [],
+        # "jinja_env": {
+        #     "undefined": "jinja2.StrictUndefined",
+        #     "trim_blocks": True,
+        #     "lstrip_blocks": False,
+        # },
+        # "default_deploy_status": "Not Approved",
+        # "get_custom_compliance": "my.custom_compliance.func"
     },
 }
